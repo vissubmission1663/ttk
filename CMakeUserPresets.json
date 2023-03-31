@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "Benchmark",
+      "inherits": "TTK-PerformanceBenchmark",
+      "cacheVariables": {
+        "TTK_BUILD_DOCUMENTATION": "OFF",
+        "TTK_BUILD_STANDALONE_APPS": "OFF",
+        "TTK_BUILD_PARAVIEW_PLUGINS": "ON",
+        "TTK_ENABLE_OPENMP": "ON",
+        "TTK_ENABLE_64BIT_IDS": "ON",
+        "TTK_WHITELIST_MODE": "ON",
+        "VTK_MODULE_ENABLE_ttkAlgorithm": "YES",
+        "VTK_MODULE_ENABLE_ttkFTMTree": "YES",
+        "VTK_MODULE_ENABLE_ttkExTreeM": "YES",
+        "VTK_MODULE_ENABLE_ttkTopologicalSimplificationByPersistence": "YES",
+        "VTK_MODULE_ENABLE_ttkGeometrySmoother": "YES",
+        "VTK_MODULE_ENABLE_ttkConnectedComponents": "YES"
+      }
+    }
+  ]
+}
